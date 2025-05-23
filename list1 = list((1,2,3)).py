@@ -1,6 +1,9 @@
-list1 = [1, 2, 3]
-list2 = []
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+print(fruits)
+# Git hub latest codesgit
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
 
-for x in list1:
-    list2.append(x)
-    print(list2)
+print(newlist)
