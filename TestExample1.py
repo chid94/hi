@@ -26,7 +26,7 @@ def login():
     if user == USERNAME and pw == PASSWORD:
         messagebox.showinfo("Login Success", "Welcome!")
         open_dashboard()
-    #else:
+    else:
       messagebox.showerror("Login Failed", "Invalid username or password")
 
 # Main Window
