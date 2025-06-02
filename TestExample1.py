@@ -24,10 +24,10 @@ def login():
     user = entry_username.get()
     pw = entry_password.get()
     if user == USERNAME and pw == PASSWORD:
-        messagebox.showinfo("Fuck YOU")
+        messagebox.showinfo("Fuck YOU Yeah,")
         open_dashboard()
     else:
-      messagebox.showerror( "Invalid username or password")
+      messagebox.showerror( "Invalid username or password, Sorry!")
 
 # Main Window
 root = tk.Tk() 
