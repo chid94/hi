@@ -24,10 +24,10 @@ def login():
     user = entry_username.get()
     pw = entry_password.get()
     if user == USERNAME and pw == PASSWORD:
-        messagebox.showinfo("Login Success", "Welcome!")
+       # messagebox.showinfo("Login Success", "Welcome!")
         open_dashboard()
-    else:
-        messagebox.showerror("Login Failed", "Invalid username or password")
+    # else:
+    #     messagebox.showerror("Login Failed", "Invalid username or password")
 
 # Main Window
 root = tk.Tk() 
