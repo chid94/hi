@@ -6,7 +6,7 @@ USERNAME = "admin"
 PASSWORD = "password123"
 
 # Function to open the new window (dashboard)
-def open_dashboard():
+def test_opendashboard():
     dashboard = tk.Toplevel(root)
     dashboard.state('zoomed')
     dashboard.title("Dashboard")
@@ -20,12 +20,12 @@ def open_dashboard():
     tk.Button(dashboard, text="Logout", width=20, command=dashboard.destroy).pack(pady=20)
 
 # Login functi on
-def login():
+def test_login():
     user = entry_username.get()
     pw = entry_password.get()
     if user == USERNAME and pw == PASSWORD:
         messagebox.showinfo("Fuck YOU Yeah,")
-        open_dashboard()
+        test_opendashboard()
     else:
       messagebox.showerror( "Invalid username xor password, Sorry!")
 
@@ -47,7 +47,7 @@ entry_password = tk.Entry(root, show="*")
 entry_password.pack()
 
 # Login Button
-tk.Button(root, text="Login", command=login).pack(pady=20)
+tk.Button(root, text="Login", command=test_login).pack(pady=20)
 
 # Run app
 root.mainloop()
