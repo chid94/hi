@@ -27,7 +27,7 @@ def login():
         messagebox.showinfo("Fuck YOU Yeah,")
         open_dashboard()
     else:
-      messagebox.showerror( "Invalid username or password, Sorry!")
+      messagebox.showerror( "Invalid username xor password, Sorry!")
 
 # Main Window
 root = tk.Tk() 
