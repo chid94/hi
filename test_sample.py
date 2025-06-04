@@ -1,11 +1,9 @@
-def test_calculate(num1, num2):
-    
-        return num1 + num2
-            
+def calculate(num1, num2):
+    return num1 + num2
 
-
-test_calculate(2,4)
-
+def test_calculate():
+    assert calculate(2, 4) == 6
+    assert calculate(0, 0) == 0
 
 
 
