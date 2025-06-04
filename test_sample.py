@@ -1,9 +1,83 @@
-import tkinter as tk
-from tkinter import messagebox
+def calculate(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+      if num2 == 0:
+        return "Cannot divide by zero"
+      return num1 / num2
+    else:
+        return "Invalid operation"
 
-# Dummy credentials
-USERNAME = "admin"
-PASSWORD = "password123"
+# Example
+result = calculate(10, 5, '+')
+print(result)  # Output: 15
+
+result = calculate(10, 5, '-')
+print(result) # Output: 5
+
+result = calculate(10, 5, '*')
+print(result) # Output: 50
+
+result = calculate(10, 5, '/')
+print(result) # Output: 2.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import tkinter as tk
+# from tkinter import messagebox
+
+# # Dummy credentials
+# USERNAME = "admin"
+# PASSWORD = "password123"
 
 # Function to open the new window (dashboard)
 # def test_opendashboard():
