@@ -1,32 +1,10 @@
-def test_calculate(num1, num2, operation):
-    if operation == '+':
+def test_calculate(num1, num2):
+    
         return num1 + num2
-    elif operation == '-':
-        return num1 - num2
-    elif operation == '*':
-        return num1 * num2
-    elif operation == '/':
-      if num2 == 0:
-        return "Cannot divide by zero"
-      return num1 / num2
-    else:
-        return "Invalid operation"
-
-# Example
-result = test_calculate(10, 5, '+')
-print(result)  # Output: 15
-
-result = test_calculate(10, 5, '-')
-print(result) # Output: 5
-
-result = test_calculate(10, 5, '*')
-print(result) # Output: 50
-
-result = test_calculate(10, 5, '/')
-print(result) # Output: 2.0
+            
 
 
-
+test_calculate(2,4)
 
 
 
