@@ -1,4 +1,4 @@
-def calculate(num1, num2, operation):
+def test_calculate(num1, num2, operation):
     if operation == '+':
         return num1 + num2
     elif operation == '-':
@@ -13,16 +13,16 @@ def calculate(num1, num2, operation):
         return "Invalid operation"
 
 # Example
-result = calculate(10, 5, '+')
+result = test_calculate(10, 5, '+')
 print(result)  # Output: 15
 
-result = calculate(10, 5, '-')
+result = test_calculate(10, 5, '-')
 print(result) # Output: 5
 
-result = calculate(10, 5, '*')
+result = test_calculate(10, 5, '*')
 print(result) # Output: 50
 
-result = calculate(10, 5, '/')
+result = test_calculate(10, 5, '/')
 print(result) # Output: 2.0
 
 
